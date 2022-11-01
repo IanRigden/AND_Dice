@@ -29,7 +29,7 @@ public class AND_Dice {
         }
 
         //Show the final double 6 tally.
-        System.out.println("Double 6 was thrown " + doublesCount + " times out of 100.");
+        System.out.println("Double 6 was thrown " + doublesCount + " times out of " + rolls + ".");
     }
 
     private static int roll(int sides) {
