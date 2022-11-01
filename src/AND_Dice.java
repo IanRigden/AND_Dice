@@ -1,14 +1,18 @@
 import java.util.Random;
-
+import java.util.Scanner;
 public class AND_Dice {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         //Set variables to 0
         int dice1 = 0;
         int dice2 = 0;
         int doublesCount = 0;
 
-        //Loop 11 times
-        for (int i = 1; i < 101; i++) {
+        //How many times to loop?
+        Scanner objScanner = new Scanner(System.in);
+        System.out.println("How many times should I roll the dice?");
+        int rolls = objScanner.nextInt();
+        //Loop ??? times
+        for (int i = 1; i < rolls+1; i++) {
             //Roll each dice
             dice1 = roll(6);
             dice2 = roll(6);
